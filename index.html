@@ -12,8 +12,6 @@
     <!--Style-->
     <link rel="stylesheet" href="./sass/main.css" />
 
-    <!--Scripts-->
-    <script src="./scripts/index.js"></script>
     <title>Mars Weather App</title>
   </head>
   <body>
@@ -58,26 +56,20 @@
 
       <div class="unit">
         <label for="cal">&#8451;</label>
-        <input type="radio" name="unit" id="cel" checked />
+        <input type="radio" name="unit" id="cal" checked hidden />
         <!--Toggle between Celsius and Fahrenheit-->
         <button class="unit__toggle"></button>
         <label for="fah">&#8457;</label>
-        <input type="radio" name="unit" id="fah" />
+        <input type="radio" name="unit" id="fah" hidden />
       </div>
     </main>
 
     <div class="previous-weather">
-      <input type="radio" name="unit" id="cel" />
-      <label for="weather-toggle" class="show-previous-weather-label"
-        >&#8593;<span class="sr-only">Show previou weather</span></label
-      >
-      <input
-        type="checkbox"
-        id="weather-toggle"
-        class="show-previous-weather-toggle"
-      />
+      <button for="weather-toggle" class="show-previous-weather">
+        <span>&#8593;</span><span class="sr-only">Show previous weather</span>
+      </button>
 
-      <h2 class="main-title">Previous 7 days</h2>
+      <h2 class="main-title previous-weather__title">Previous 7 days</h2>
 
       <div class="previous-days">
         <div class="previous-day">
@@ -87,7 +79,52 @@
           <p class="previous-day__temp">Low: -120&#8451;</p>
           <button class="previous-day__more-info">more info</button>
         </div>
+        <div class="previous-day">
+          <h3 class="previous-day__sol">Sol 371</h3>
+          <p class="previous-day__date">September 31</p>
+          <p class="previous-day__temp">High: -20&#8451;</p>
+          <p class="previous-day__temp">Low: -120&#8451;</p>
+          <button class="previous-day__more-info">more info</button>
+        </div>
+        <div class="previous-day">
+          <h3 class="previous-day__sol">Sol 371</h3>
+          <p class="previous-day__date">September 31</p>
+          <p class="previous-day__temp">High: -20&#8451;</p>
+          <p class="previous-day__temp">Low: -120&#8451;</p>
+          <button class="previous-day__more-info">more info</button>
+        </div>
+        <div class="previous-day">
+          <h3 class="previous-day__sol">Sol 371</h3>
+          <p class="previous-day__date">September 31</p>
+          <p class="previous-day__temp">High: -20&#8451;</p>
+          <p class="previous-day__temp">Low: -120&#8451;</p>
+          <button class="previous-day__more-info">more info</button>
+        </div>
+        <div class="previous-day">
+          <h3 class="previous-day__sol">Sol 371</h3>
+          <p class="previous-day__date">September 31</p>
+          <p class="previous-day__temp">High: -20&#8451;</p>
+          <p class="previous-day__temp">Low: -120&#8451;</p>
+          <button class="previous-day__more-info">more info</button>
+        </div>
+        <div class="previous-day">
+          <h3 class="previous-day__sol">Sol 371</h3>
+          <p class="previous-day__date">September 31</p>
+          <p class="previous-day__temp">High: -20&#8451;</p>
+          <p class="previous-day__temp">Low: -120&#8451;</p>
+          <button class="previous-day__more-info">more info</button>
+        </div>
+        <div class="previous-day">
+          <h3 class="previous-day__sol">Sol 371</h3>
+          <p class="previous-day__date">September 31</p>
+          <p class="previous-day__temp">High: -20&#8451;</p>
+          <p class="previous-day__temp">Low: -120&#8451;</p>
+          <button class="previous-day__more-info">more info</button>
+        </div>
       </div>
     </div>
+
+    <!--Scripts-->
+    <script src="./scripts/index.js"></script>
   </body>
 </html>
